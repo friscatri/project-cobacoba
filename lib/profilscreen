@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+
+class ProfilScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+        child: Scaffold(
+            body: Container(
+              decoration: BoxDecoration(
+                color: Colors.lightBlue[300]
+            ),
+            child: Stack(
+              children: <Widget>[
+                Positioned.fill(
+                  top: 150,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xfff7f7f7),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                    ),
+                  ),
+                ),
+
+                Positioned(
+                  child: Column(
+                    children: [
+                      SizedBox(height: 30),
+                      Text(
+                        "Profil",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+
+                    ]
+                  )
+                )
+              
+            )
+    );
+  }
+}
